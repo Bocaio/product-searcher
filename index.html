@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Searcher</title>
+    <link rel="stylesheet" href="dist/output.css">
+</head>
+<body class="h-screen">
+    <header class="text-center py-6 text-4xl font-bold">BOCAKI Products</header>
+    <main class="max-w-[250px] h-2/3 border-2 border-black lg:max-w-md flex justify-center flex-col items-center mx-auto">
+        <div class="grid grid-cols-4 border-2 p-3 w-full">
+            <i class="fa-solid fa-magnifying-glass pt-[1px] flex justify-center items-center rounded-l-md border-2 border-black border-r-0"></i>
+            <input type="search" class="outline-none flex items-center col-span-3 text-lg rounded-r-md border-2 border-black border-l-0" name="" id="searchInput" placeholder="search" onkeyup="showingResults()">
+        </div>
+        <div id="productItems" class="p-3 w-full h-5/6 overflow-y-scroll  scrollbar-thin scrollbar-thumb-slate-400 flex flex-col gap-y-1">
+            <div  class="product grid grid-cols-5">
+                <img class=" border border-slate-500 place-self-center row-span-2" src="https://cdn11.bigcommerce.com/s-rxzabllq/images/stencil/1280x1280/products/1504/12422/1HT_AQUA-Plain-100-Cotton-Tshirt-Online__30618.1643763653.jpg?c=2" alt="">
+                <h2 class="px-3 text-lg text-left col-span-4">Simple T-shirt</h2>
+                <p class="px-3 font-semibold text-lg text-left col-span-4">$12</p>
+            </div>
+            <div  class="product grid grid-cols-5">
+                <img class=" border border-slate-500 place-self-center row-span-2" src="https://cdn11.bigcommerce.com/s-rxzabllq/images/stencil/1280x1280/products/1504/12422/1HT_AQUA-Plain-100-Cotton-Tshirt-Online__30618.1643763653.jpg?c=2" alt="">
+                <h2 class="px-3 text-lg text-left col-span-4">Simple T-shirt-1</h2>
+                <p class="px-3 font-semibold text-lg text-left col-span-4">$12</p>
+            </div>
+            <div  class="product grid grid-cols-5">
+                <img class=" border border-slate-500 place-self-center row-span-2" src="https://cdn11.bigcommerce.com/s-rxzabllq/images/stencil/1280x1280/products/1504/12422/1HT_AQUA-Plain-100-Cotton-Tshirt-Online__30618.1643763653.jpg?c=2" alt="">
+                <h2 class="px-3 text-lg text-left col-span-4">Hat</h2>
+                <p class="px-3 font-semibold text-lg text-left col-span-4">$12</p>
+            </div>
+            <div  class="product grid grid-cols-5">
+                <img class=" border border-slate-500 place-self-center row-span-2" src="https://cdn11.bigcommerce.com/s-rxzabllq/images/stencil/1280x1280/products/1504/12422/1HT_AQUA-Plain-100-Cotton-Tshirt-Online__30618.1643763653.jpg?c=2" alt="">
+                <h2 class="px-3 text-lg text-left col-span-4">New</h2>
+                <p class="px-3 font-semibold text-lg text-left col-span-4">$12</p>
+            </div>
+            <div  class="product grid grid-cols-5">
+                <img class=" border border-slate-500 place-self-center row-span-2" src="https://cdn11.bigcommerce.com/s-rxzabllq/images/stencil/1280x1280/products/1504/12422/1HT_AQUA-Plain-100-Cotton-Tshirt-Online__30618.1643763653.jpg?c=2" alt="">
+                <h2 class="px-3 text-lg text-left col-span-4">pant</h2>
+                <p class="px-3 font-semibold text-lg text-left col-span-4">$12</p>
+            </div>
+            <div  class="product grid grid-cols-5">
+                <img class=" border border-slate-500 place-self-center row-span-2" src="https://cdn11.bigcommerce.com/s-rxzabllq/images/stencil/1280x1280/products/1504/12422/1HT_AQUA-Plain-100-Cotton-Tshirt-Online__30618.1643763653.jpg?c=2" alt="">
+                <h2 class="px-3 text-lg text-left col-span-4">Levis</h2>
+                <p class="px-3 font-semibold text-lg text-left col-span-4">$12</p>
+            </div>
+            <div  class="product grid grid-cols-5">
+                <img class=" border border-slate-500 place-self-center row-span-2" src="https://cdn11.bigcommerce.com/s-rxzabllq/images/stencil/1280x1280/products/1504/12422/1HT_AQUA-Plain-100-Cotton-Tshirt-Online__30618.1643763653.jpg?c=2" alt="">
+                <h2 class="px-3 text-lg text-left col-span-4">Lamborgini</h2>
+                <p class="px-3 font-semibold text-lg text-left col-span-4">$12</p>
+            </div>
+            <div  class="product grid grid-cols-5">
+                <img class=" border border-slate-500 place-self-center row-span-2" src="https://cdn11.bigcommerce.com/s-rxzabllq/images/stencil/1280x1280/products/1504/12422/1HT_AQUA-Plain-100-Cotton-Tshirt-Online__30618.1643763653.jpg?c=2" alt="">
+                <h2 class="px-3 text-lg text-left col-span-4">supreme</h2>
+                <p class="px-3 font-semibold text-lg text-left col-span-4">$12</p>
+            </div>
+            <div  class="product grid grid-cols-5">
+                <img class=" border border-slate-500 place-self-center row-span-2" src="https://cdn11.bigcommerce.com/s-rxzabllq/images/stencil/1280x1280/products/1504/12422/1HT_AQUA-Plain-100-Cotton-Tshirt-Online__30618.1643763653.jpg?c=2" alt="">
+                <h2 class="px-3 text-lg text-left col-span-4">Hi</h2>
+                <p class="px-3 font-semibold text-lg text-left col-span-4">$12</p>
+            </div>
+            <div  class="product grid grid-cols-5">
+                <img class=" border border-slate-500 place-self-center row-span-2" src="https://cdn11.bigcommerce.com/s-rxzabllq/images/stencil/1280x1280/products/1504/12422/1HT_AQUA-Plain-100-Cotton-Tshirt-Online__30618.1643763653.jpg?c=2" alt="">
+                <h2 class="px-3 text-lg text-left col-span-4">Pubg</h2>
+                <p class="px-3 font-semibold text-lg text-left col-span-4">$12</p>
+            </div>
+            <div  class="product grid grid-cols-5">
+                <img class=" border border-slate-500 place-self-center row-span-2" src="https://cdn11.bigcommerce.com/s-rxzabllq/images/stencil/1280x1280/products/1504/12422/1HT_AQUA-Plain-100-Cotton-Tshirt-Online__30618.1643763653.jpg?c=2" alt="">
+                <h2 class="px-3 text-lg text-left col-span-4">headshot</h2>
+                <p class="px-3 font-semibold text-lg text-left col-span-4">$12</p>
+            </div>
+        </div>
+    </main>
+    <script src="src/app.js"></script>
+</body>
+</html>
